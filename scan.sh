@@ -4,6 +4,8 @@ SIZE=$(7z l -slt ARCHIVE_NAME.7z | awk -F' = ' '
   found && $1=="Size" {print $2; exit}
 ')
 
+echo "Size of ARCHIVE_CONTENTS.txt: $SIZE bytes"
+
 #Change the filenames in all caps to your desired value
 
 7z x -so ARCHIVE_NAME.7z ARCHIVE_CONTENTS.txt \
