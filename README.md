@@ -17,4 +17,4 @@ Script to filter the e-mailaddresses from a 7z-archive
 - sudo apt install p7zip-full jq pv grep gawk coreutils
 
 ## Usage
-./scan.sh
+./check_domain.sh
